@@ -18,6 +18,15 @@ Or install it yourself as:
 
     $ gem install twentysix
 
+### Usage
+
+```ruby
+require 'twentysix'
+
+client = TwentySix::Core.authenticate(ENV["N26_USERNAME"], ENV["N26_PASSWORD"])
+puts client.transactions(count: 3)
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/twentysix. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
