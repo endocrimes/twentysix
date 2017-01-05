@@ -104,8 +104,6 @@ module TwentySix
       get "/api/transactions/#{smartlink_id}/metadata"
     end
 
-    # @TODO: Figure out what `SecurityContext` is to make this actually work.
-    #
     def create_transfer(pin, name, iban, bic, amount, reference)
       post '/api/transactions', options: {
         body: {
