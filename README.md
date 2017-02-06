@@ -2,6 +2,7 @@
 
 Completely unofficial Ruby gem for the N26 API.
 
+
 ## Installation
 
 Add this line to your application's Gemfile:
